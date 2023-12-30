@@ -1,6 +1,6 @@
 import SearchIcon from "@mui/icons-material/Search";
 import { useState, useEffect } from "react";
-import Country from "./country";
+import CountryCard from "./countryCard";
 import { useSelector } from "react-redux";
 
 function Countries() {
@@ -26,7 +26,7 @@ function Countries() {
         allCountries.filter((item) => item.name.startsWith(searchValue))
       );
     }
-  }, [searchValue]);
+  }, [searchValue, allCountries]);
   return (
     <main className="min-h-[94.1vh] px-12 dark:bg-veryDark min-w-screen flex flex-col">
       <header className="mt-4 flex items-center flex-wrap justify-between">
@@ -58,7 +58,7 @@ function Countries() {
       </header>
       <section className="mt-8 flex justify-between flex-wrap">
         {filteredCountries.map((item, index) => (
-          <Country
+          <CountryCard
             key={index}
             name={item.name}
             population={item.population}
