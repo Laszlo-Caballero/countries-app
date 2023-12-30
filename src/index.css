@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "NunitoSansBlod";
+    src: url("./font/NunitoSans_7pt-Bold.ttf");
+}
+@font-face {
+    font-family: "NunitoSansMedium";
+    src: url("./font/NunitoSans_7pt-Medium.ttf");
+}
+@font-face {
+    font-family: "NunitoSansLight";
+    src: url("./font/NunitoSans_7pt-Light.ttf");
+}
+@font-face {
+    font-family: "NunitoSansExtraLight";
+    src: url("./font/NunitoSans_7pt-ExtraLight.ttf");
+}
+*{
+    margin: 0;
+    padding: 0;
+}
