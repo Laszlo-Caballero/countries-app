@@ -11,8 +11,10 @@ function Header() {
     }
   }, [isDarkMode]);
   return (
-    <header className="flex dark:bg-darkBlue h-14 min-w-screen items-center px-12 dark:text-white text-darkBlue justify-between dark:shadow-none shadow-lg">
-      <p className="font-NunitoSansBlod">Where in te world?</p>
+    <header className="flex dark:bg-darkBlue h-14 min-w-screen items-center lg:px-12 dark:text-white text-darkBlue justify-between dark:shadow-none shadow-lg mobile:px-4">
+      <p className="font-NunitoSansBlod mobile:text-sm lg:text-xl">
+        Where in te world?
+      </p>
       <button
         className="text-sm flex gap-3 font-NunitoSansLight"
         onClick={() => {

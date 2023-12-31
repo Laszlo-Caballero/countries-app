@@ -16,20 +16,23 @@ function CountryPage() {
   );
 
   return (
-    <main className="dark:bg-veryDark dark:text-white min-h-[94.1vh] px-12 py-16 flex flex-col">
+    <main className="dark:bg-veryDark dark:text-white min-h-[94.1vh] lg:px-12 lg:py-16 flex flex-col mobile:px-4 mobile:py-8">
       <div className="dark:bg-darkBlue w-32 flex items-center justify-center py-2 dark:shadow-none shadow-borderShadow">
         <Link to="/" className="flex gap-2">
           <KeyboardBackspaceIcon /> Back
         </Link>
       </div>
-      <section className="w-full mt-14 flex h-[28em]">
-        <img src={countryRender.flag} className="w-1/2" />
-        <article className="w-1/2 flex pl-28 flex-col mt-10">
+      <section className="w-full mt-14 flex h-[28em] mobile:flex-wrap mobile:h-auto">
+        <img
+          src={countryRender.flag}
+          className="lg:w-1/2 mobile:h-[16em] mobile:w-full lg:h-[30em]"
+        />
+        <article className="lg:w-1/2 flex lg:pl-28 flex-col mt-10">
           <p className="font-NunitoSansBlod text-3xl w-full">
             {countryRender.name}
           </p>
-          <div className="w-full flex mt-10">
-            <div className="w-1/2">
+          <div className="w-full flex mt-10 mobile:flex-wrap">
+            <div className="lg:w-1/2 mobile:w-full">
               <p className="mb-2">
                 Native Name:
                 <span className="font-NunitoSansExtraLight">
@@ -61,7 +64,7 @@ function CountryPage() {
                 </span>
               </p>
             </div>
-            <div className="w-1/2">
+            <div className="lg:w-1/2 mobile:w-full mobile:mt-10">
               <p className="mb-2">
                 Top Level Domain:
                 <span className="font-NunitoSansExtraLight">
@@ -87,7 +90,7 @@ function CountryPage() {
             </div>
           </div>
           {countryRender.borders && (
-            <footer className="mt-16">
+            <footer className="lg:mt-16 mobile:mt-8">
               <p>Border Countries:</p>
               <div className="flex flex-wrap gap-5 mt-2">
                 {countriesNames.map((item, index) => (
