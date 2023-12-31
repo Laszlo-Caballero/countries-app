@@ -13,6 +13,9 @@ export default {
         NunitoSansLight: ["NunitoSansLight"],
         NunitoSansExtraLight: ["NunitoSansExtraLight"],
       },
+      gridTemplateColumns: {
+        "4-auto": "auto auto auto auto",
+      },
     },
   },
   plugins: [],

@@ -56,7 +56,7 @@ function Countries() {
           <option value="Oceania">Oceania</option>
         </select>
       </header>
-      <section className="mt-8 flex justify-between flex-wrap">
+      <section className="mt-8 grid grid-cols-4-auto justify-between">
         {filteredCountries.map((item, index) => (
           <CountryCard
             key={index}
