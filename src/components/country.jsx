@@ -14,7 +14,7 @@ function CountryPage() {
       );
     }
   );
-  console.log(countriesNames);
+
   return (
     <main className="dark:bg-veryDark dark:text-white min-h-[94.1vh] px-12 py-16 flex flex-col">
       <div className="dark:bg-darkBlue w-32 flex items-center justify-center py-2 dark:shadow-none shadow-borderShadow">
