@@ -30,7 +30,7 @@ function Countries() {
   return (
     <main className="min-h-[94.1vh] px-12 dark:bg-veryDark min-w-screen flex flex-col">
       <header className="mt-4 flex items-center flex-wrap justify-between">
-        <div className="flex gap-3 dark:text-white dark:bg-darkBlue w-1/3 px-3 py-2 h-auto">
+        <div className="flex gap-3 dark:text-white dark:bg-darkBlue w-1/3 px-3 py-2 h-auto dark:shadow-none shadow-borderShadow">
           <SearchIcon />
           <input
             type="text"
@@ -46,7 +46,7 @@ function Countries() {
           onChange={(e) => {
             setOption(e.target.value);
           }}
-          className="h-full w-[150px] text-left px-2 py-2 rounded-md dark:text-white dark:bg-darkBlue"
+          className="h-full w-[150px] text-left px-2 py-2 rounded-md dark:text-white dark:bg-darkBlue dark:shadow-none shadow-borderShadow"
         >
           <option value="None">None</option>
           <option value="Africa">Africa</option>

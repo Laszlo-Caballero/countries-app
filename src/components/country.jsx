@@ -17,7 +17,7 @@ function CountryPage() {
   console.log(countriesNames);
   return (
     <main className="dark:bg-veryDark dark:text-white min-h-[94.1vh] px-12 py-16 flex flex-col">
-      <div className="dark:bg-darkBlue w-32 flex items-center justify-center py-2">
+      <div className="dark:bg-darkBlue w-32 flex items-center justify-center py-2 dark:shadow-none shadow-borderShadow">
         <Link to="/" className="flex gap-2">
           <KeyboardBackspaceIcon /> Back
         </Link>
@@ -94,7 +94,7 @@ function CountryPage() {
                   <Link
                     to={`/country/${item.name}`}
                     key={index}
-                    className="dark:bg-darkBlue px-5 py-1 font-NunitoSansExtraLight text-sm"
+                    className="dark:bg-darkBlue px-5 py-1 font-NunitoSansExtraLight text-sm dark:shadow-none shadow-borderShadow"
                   >
                     {item.name}
                   </Link>
