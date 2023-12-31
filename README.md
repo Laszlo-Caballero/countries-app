@@ -1,4 +1,4 @@
-# Countrie App FrontEndMentor
+# Countries App FrontEndMentor
 
 ## Instalacion
 
